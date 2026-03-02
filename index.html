@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
@@ -13,47 +14,46 @@ scroll-behavior:smooth;
 
 body{
 margin:0;
-font-family: "Segoe UI", sans-serif;
-background: linear-gradient(135deg,#0b7a75,#1e90ff);
+font-family:Segoe UI;
+background: linear-gradient(135deg,#0f9b8e,#1e90ff);
 color:white;
 }
 
-/* NAVBAR PREMIUM */
+/* NAVBAR */
 
 nav{
-background: rgba(255,255,255,0.08);
-backdrop-filter: blur(15px);
-padding:18px;
+background: rgba(0,0,0,0.3);
+backdrop-filter: blur(10px);
+padding:15px;
 text-align:center;
-box-shadow:0 0 20px rgba(0,0,0,0.2);
 }
 
 nav a{
 color:white;
 text-decoration:none;
-margin:22px;
-font-weight:600;
+margin:20px;
+font-weight:bold;
 font-size:18px;
 transition:0.3s;
 }
 
 nav a:hover{
-color:#00ffd5;
-letter-spacing:1px;
+color:#00ffcc;
+transform:scale(1.1);
 }
 
-/* CONTAINER */
+/* SECTIUNI */
 
-.container{
-padding:110px 20px;
+section{
+padding:120px 20px;
 text-align:center;
-animation:fadeUp 1s ease forwards;
+animation: fadeUp 1s ease forwards;
 }
 
 @keyframes fadeUp{
 from{
 opacity:0;
-transform:translateY(50px);
+transform:translateY(40px);
 }
 to{
 opacity:1;
@@ -61,67 +61,50 @@ transform:translateY(0);
 }
 }
 
-/* BUTTON PREMIUM */
-
-button{
-padding:14px 35px;
-border:none;
-border-radius:40px;
-background: linear-gradient(135deg,#00c896,#008cba);
-color:white;
-font-size:17px;
-cursor:pointer;
-transition:0.4s;
-box-shadow:0 0 15px rgba(0,0,0,0.2);
-}
-
-button:hover{
-transform:scale(1.08);
-box-shadow:0 0 25px rgba(0,255,200,0.5);
-}
-
-/* CARDURI PRODUSE */
+/* CARDS */
 
 .cards{
 display:flex;
 justify-content:center;
 flex-wrap:wrap;
-gap:35px;
-margin-top:60px;
+gap:30px;
+margin-top:50px;
 }
 
 .card{
-width:260px;
-background: rgba(255,255,255,0.08);
-backdrop-filter: blur(12px);
-border-radius:25px;
-overflow:hidden;
+background: rgba(255,255,255,0.15);
+padding:25px;
+border-radius:20px;
+width:250px;
 transition:0.4s;
-box-shadow:0 0 20px rgba(0,0,0,0.15);
 }
 
 .card:hover{
-transform:translateY(-18px) scale(1.03);
-box-shadow:0 0 35px rgba(0,255,220,0.3);
+transform:translateY(-15px);
+background: rgba(255,255,255,0.25);
 }
 
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
+button{
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:30px;
+background:#00c896;
+color:white;
+cursor:pointer;
+transition:0.3s;
 }
 
-.card-content{
-padding:22px;
+button:hover{
+background:#008cba;
+transform:scale(1.1);
 }
-
-/* FOOTER */
 
 footer{
-background:rgba(0,0,0,0.25);
-padding:25px;
+background: rgba(0,0,0,0.3);
+padding:20px;
 text-align:center;
-margin-top:90px;
+margin-top:80px;
 }
 
 </style>
@@ -170,5 +153,4 @@ margin-top:90px;
 </footer>
 
 </body>
-
 </html>
