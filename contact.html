@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #16a085, #2980b9);
+    color: white;
+}
+
+nav { background: rgba(0,0,0,0.3); padding: 15px; text-align: center; }
+nav a {
+    color: white; text-decoration: none; margin: 20px;
+    font-weight: bold; font-size: 18px; transition: 0.3s;
+}
+nav a:hover { color: #00ffcc; transform: scale(1.1); }
+
+.container {
+    padding: 100px 20px;
+    text-align: center;
+    animation: fadeUp 1s ease forwards;
+}
+
+input, textarea {
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+button {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 20px;
+    background: #00c896;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #008cba;
+    transform: scale(1.1);
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Acasă</a>
+    <a href="produse.html">Produse</a>
+    <a href="despre.html">Despre</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>Contact</h1>
+    <p>Email: dmonika_2005@yahoo.com</p>
+    <p>Telefon: +40 733 197 254</p>
+
+    <h3>Trimite un mesaj</h3>
+    <input type="text" placeholder="Nume"><br>
+    <input type="email" placeholder="Email"><br>
+    <textarea placeholder="Mesaj"></textarea><br>
+    <button>Trimite</button>
+</div>
+
+<footer>
+© 2026 Mărgele Handmade
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Produse - Mărgele Handmade</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #16a085, #2980b9);
+    color: white;
+}
+
+nav {
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ffcc;
+    transform: scale(1.1);
+}
+
+.container {
+    padding: 80px 20px;
+    text-align: center;
+    animation: fadeUp 1s ease forwards;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: rgba(255,255,255,0.15);
+    padding: 25px;
+    border-radius: 20px;
+    width: 250px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    background: rgba(255,255,255,0.25);
+}
+
+@keyframes fadeUp {
+    from {opacity: 0; transform: translateY(40px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+footer {
+    background: rgba(0,0,0,0.3);
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Acasă</a>
+    <a href="produse.html">Produse</a>
+    <a href="despre.html">Despre</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h1>Produsele Noastre</h1>
+
+    <div class="cards">
+        <div class="card">
+            <h3>Brățară Verde</h3>
+            <p>Lucrată manual, elegantă și rezistentă.</p>
+        </div>
+
+        <div class="card">
+            <h3>Colier Albastru</h3>
+            <p>Design modern, perfect pentru cadou.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cercei Handmade</h3>
+            <p>Ușori și unici.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+© 2026 Mărgele Handmade
+</footer>
+
+</body>
+</html>
