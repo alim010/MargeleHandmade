@@ -125,52 +125,7 @@ margin-top:90px;
 }
 
 </style>
-  .card::before{
-content:"";
-position:absolute;
-top:0;
-left:-100%;
-width:100%;
-height:100%;
-background: linear-gradient(
-120deg,
-transparent,
-rgba(0,255,220,0.2),
-transparent
-);
-transition:0.6s;
-}
 
-.card:hover::before{
-left:100%;
-}
-
-.card{
-position:relative;
-}
-
-button:active{
-transform:scale(0.95);
-}
-
-nav a{
-position:relative;
-}
-
-nav a::after{
-content:"";
-position:absolute;
-left:0;
-bottom:-5px;
-width:0%;
-height:2px;
-background:#00ffd5;
-transition:0.4s;
-}
-
-nav a:hover::after{
-width:100%;
-}
 </head>
 
 <body>
@@ -218,4 +173,5 @@ width:100%;
 </body>
 
 </html>
+
 
